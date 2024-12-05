@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Persuasive</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .cta {
+            background-color: #ff4c4c;
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #ff4c4c;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+        form button:hover {
+            background-color: #e63b3b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Votre Salle de Sport</h1>
+        <nav>
+            <a href="#value">Proposition de Valeur</a>
+            <a href="#gallery">Galerie</a>
+            <a href="#testimonials">Témoignages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="value">
+        <h2>Transformez Votre Vie Aujourd'hui</h2>
+        <p>Notre salle offre une expérience unique avec des coachs certifiés et un matériel à la pointe de la technologie.</p>
+        <button onclick="alert('Réservation effectuée !')">Réservez une Séance</button>
+    </section>
+
+    <section id="gallery">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200" alt="Image de la salle 1">
+            <img src="https://via.placeholder.com/300x200" alt="Image de la salle 2">
+            <img src="https://via.placeholder.com/300x200" alt="Image de la salle 3">
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Témoignages</h2>
+        <blockquote>"La meilleure salle de sport que j'ai jamais visitée !" - <em>Jean Dupont</em></blockquote>
+        <blockquote>"Des coachs incroyables et des résultats garantis." - <em>Marie Durant</em></blockquote>
+    </section>
+
+    <section id="contact" class="cta">
+        <h2>Contactez-nous</h2>
+        <p>Email : contact@salledesport.com</p>
+        <p>Téléphone : 01 23 45 67 89</p>
+        <form>
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Votre Salle de Sport. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
